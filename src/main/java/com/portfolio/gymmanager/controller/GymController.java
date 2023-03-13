@@ -32,7 +32,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 @RestController
 //@PreAuthorize("hasRole('GYM')")
-@RequestMapping("/gym")
+@RequestMapping("/api/v1/gym")
 @Data
 public class GymController {
 

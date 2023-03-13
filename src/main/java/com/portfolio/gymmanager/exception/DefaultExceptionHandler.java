@@ -2,6 +2,7 @@ package com.portfolio.gymmanager.exception;
 
 import io.jsonwebtoken.ExpiredJwtException;
 import jakarta.validation.ConstraintViolationException;
+//import org.postgresql.util.PSQLException;
 import org.postgresql.util.PSQLException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 //@PreAuthorize("hasRole('CLIENT')'")
-@RequestMapping("/client")
+@RequestMapping("/api/v1/client")
 @Data
 public class ClientController {
     private final ClientService clientService;
