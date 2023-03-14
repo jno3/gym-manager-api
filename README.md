@@ -99,6 +99,7 @@
 >>      "title": "Beginner Week"
 >>}
 >>```
+
 >>##### PUT Requests
 >>Edit gym. [GYM-ONLY]
 >>
@@ -176,6 +177,7 @@
 >>request endpoint:
 >>localhost:8080/api/v1/gym/add_weekly_client/client/{clientId}/weekly_routine/{weeklyRountineId}/
 >>```
+
 >>##### GET Requests
 >>Get client's homepage. [CLIENT-ONLY]
 >>
@@ -226,6 +228,7 @@
 >>request endpoint:
 >>localhost:8080/api/v1/gym/daily_routine/{id}/
 >>```
+
 >>##### DELETE Requests
 >>Delete client. [CLIENT-ONLY]
 >>
