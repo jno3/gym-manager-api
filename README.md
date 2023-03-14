@@ -34,7 +34,8 @@
 >>      "password": "gym1pw"
 >>}
 >>```
->>Logout
+>>Logout.
+>>
 >>This is a logout request. It expires the JWT present in the authentication header. It works for both gym and client.
 >>```
 >>request endpoint:
