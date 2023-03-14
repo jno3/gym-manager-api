@@ -34,6 +34,12 @@
 >>      "password": "gym1pw"
 >>}
 >>```
+>>Logout
+>>This is a logout request. It expires the JWT present in the authentication header. It works for both gym and client.
+>>```
+>>request endpoint:
+>>localhost:8080/api/v1/logout/
+>>```
 
 #### Protected Endpoints
 >These endpoints are available only for requests with [Bearer Authentication](https://swagger.io/docs/specification/authentication/bearer-authentication/) in the header, following the format:
