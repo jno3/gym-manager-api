@@ -14,6 +14,7 @@ import java.util.List;
 public class DailyRoutineRequest {
     private String title;
     private List<String> exerciseName;
+    private List<Integer> exerciseLoad;
     private List<Integer> exerciseReps;
     private List<Integer> exerciseSets;
 }

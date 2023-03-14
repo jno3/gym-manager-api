@@ -18,6 +18,7 @@ public class DailyRoutineService {
         var dailyRoutine = DailyRoutine.builder()
                 .title(dailyRoutineRequest.getTitle())
                 .exerciseName(dailyRoutineRequest.getExerciseName())
+                .exerciseLoad(dailyRoutineRequest.getExerciseLoad())
                 .exerciseReps(dailyRoutineRequest.getExerciseReps())
                 .exerciseSets(dailyRoutineRequest.getExerciseSets())
                 .gym(gym)

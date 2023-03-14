@@ -63,6 +63,8 @@ public class AuthenticationService {
         saveUserToken(savedUser, jwtToken);
         return AuthenticationResponse.builder()
                 .token(jwtToken)
+                .username(request.getUsername())
+                .message("Gym with username " + request.getUsername() + " created")
                 .build();
     }
 
@@ -104,6 +106,8 @@ public class AuthenticationService {
         saveUserToken(savedUser, jwtToken);
         return AuthenticationResponse.builder()
                 .token(jwtToken)
+                .username(request.getUsername())
+                .message("Client with username " + request.getUsername() + " created")
                 .build();
     }
 
@@ -121,6 +125,8 @@ public class AuthenticationService {
         saveUserToken(user, jwtToken);
         return AuthenticationResponse.builder()
                 .token(jwtToken)
+                .username(user.getUsername())
+                .message("User with username " + user.getUsername() + " logged in")
                 .build();
     }
 

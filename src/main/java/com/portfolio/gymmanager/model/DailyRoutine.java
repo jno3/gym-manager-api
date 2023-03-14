@@ -30,6 +30,8 @@ public class DailyRoutine extends RepresentationModel<DailyRoutine> {
     @NotNull
     private List<String> exerciseName;
     @NotNull
+    private List<Integer> exerciseLoad;
+    @NotNull
     private List<Integer> exerciseReps;
     @NotNull
     private List<Integer> exerciseSets;

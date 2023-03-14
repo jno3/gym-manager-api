@@ -34,11 +34,11 @@ public class SecurityConfiguration{
                 .csrf()
                 .disable()
                 .authorizeHttpRequests()
-                .requestMatchers("/authentication/register_gym", "/authentication/login")
+                .requestMatchers("/api/v1/authentication/register_gym/", "/api/v1/authentication/login/")
                 .permitAll()
-                .requestMatchers("/gym/*")
+                .requestMatchers("/api/v1/gym/*")
                 .hasAuthority("GYM")
-                .requestMatchers("/client/*")
+                .requestMatchers("/api/v1/client/*")
                 .hasAuthority("CLIENT")
                 .anyRequest()
                 .authenticated()
@@ -48,7 +48,7 @@ public class SecurityConfiguration{
                 .authenticationProvider(authenticationProvider)
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
                 .logout()
-                .logoutUrl("/api/logout")
+                .logoutUrl("/api/v1/logout/")
                 .addLogoutHandler(logoutHandler)
                 .logoutSuccessHandler(((request, response, authentication) -> SecurityContextHolder.clearContext()));
         return http.build();
