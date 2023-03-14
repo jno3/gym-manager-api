@@ -34,6 +34,7 @@
 >>      "password": "gym1pw"
 >>}
 >>```
+
 >>##### GET Requests
 >>Logout.
 >>
