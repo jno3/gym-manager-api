@@ -38,7 +38,7 @@
 >>Logout.
 >>
 >>This is a logout request. It expires the JWT present in the authentication header. It works for both gym and client.
->>```
+>>```JSON
 >>request endpoint:
 >>localhost:8080/api/v1/logout/
 >>```
